@@ -9,13 +9,6 @@ class BasePage:
         self.driver = driver
         self.base_url = "http://HR:test@qa.digift.ru/"
 
-    def find(self, locator,time=10):
-        """ Find element on the page. """
-
-        element=WebDriverWait(self.driver, time).until(EC.presence_of_element_located(locator),
-                                                      message=f"Can't find element by locator {locator}")
-        return element
-
     def scroll_to_element(self, time=10):
         """ Scroll page to the element. """
         element = WebDriverWait(self.driver, time).until(EC.presence_of_element_located((By.CSS_SELECTOR, "body > div.wrapper > div.page-content.container > form > div.par")),
