@@ -9,8 +9,8 @@ def test_gift_500(browser):
     gift_main_page.go_to_site()
     gift_main_page.scroll_to_element()
     gift_main_page.click_on_the_500()
-    gift_main_page.check_name_class500()
-    gift_main_page.check_nominal("500")
+    gift_main_page.check_name_class500() #проверка активации кнопки
+    gift_main_page.check_nominal("500") #проверка данных в поле "Введите"
 
 @allure.feature('Choice all')
 @allure.story('Выбор всех номиналов')
