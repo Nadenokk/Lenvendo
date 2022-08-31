@@ -35,13 +35,3 @@ class Tests:
         text = JsTestTask(my_response_data)
         text.text_check_alcatel()
         text.text_check_sorted()
-
-
-
-
-
-
-
-
-
-#f"{BASE_URL}/products"
