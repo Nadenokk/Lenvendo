@@ -13,8 +13,8 @@ class JsTestTask():
             self.pricelist.append(item['price'])
 
     def text_check_alcatel(self):
-        for item in self.namelist:
-            assert "Alcatel" in item
+        for itemname in self.namelist:
+            assert "Alcatel" in itemname
 
     def text_check_sorted(self):
         assert self.namelist == sorted(self.namelist)
