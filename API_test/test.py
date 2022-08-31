@@ -27,7 +27,7 @@ class Tests:
         assert response.status_code == 200
         #print(response.text)
 
-    def test_check_alcatel(self):
+    def test_check_alcatel_and_sorted(self):
         query_params = {"search": "Alcatel", "sort_field": "name"}
         response = requests.get("https://www.lenvendo.ru/api/js-test-task/", params=query_params)
         all_response_data = json.loads(response.text)
