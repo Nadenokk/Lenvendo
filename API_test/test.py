@@ -21,7 +21,7 @@ class JsTestTask():
 
 
 class Tests:
-    def test_response(self):
+    def test_response_status(self):
         query_params = {"search": "Alcatel", "sort_field": "name"}
         response=requests.get("https://www.lenvendo.ru/api/js-test-task/", params=query_params)
         assert response.status_code == 200
